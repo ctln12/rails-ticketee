@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |_repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.4'
+ruby '3.0.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 7.0.0'
@@ -52,6 +52,9 @@ gem 'bootsnap', require: false
 
 # Net::HTTP provides a rich library which can be used to build HTTP user-agents [https://github.com/ruby/net-http]
 gem 'net-http'
+
+# Provides installers to get you going with the CSS bundler of your choice [https://github.com/rails/cssbundling-rails]
+gem 'cssbundling-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

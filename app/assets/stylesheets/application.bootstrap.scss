@@ -1,1 +1,26 @@
 @import 'bootstrap/scss/bootstrap';
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+
+  &:first-child {
+    margin-top: 20px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    max-width: 70%;
+  }
+}
+
+ul.actions {
+  @extend .list-inline;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 30%;
+
+  li {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+}

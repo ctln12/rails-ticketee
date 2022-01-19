@@ -1,5 +1,5 @@
 <% flash.each do |msg_type, message| %>
-  <div style="color: <%= msg_type == 'notice' ? 'green' : 'red' %>">
-    <p><%= message %></p>
+  <div class="alert alert-<%= msg_type %> mt-3">
+    <%= message %>
   </div>
 <% end %>

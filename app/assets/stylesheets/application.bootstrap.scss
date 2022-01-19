@@ -76,3 +76,12 @@ a.delete {
 .alert-alert {
   @extend .alert-danger;
 }
+
+form {
+  max-width: 500px;
+  margin-top: 20px;
+
+  div.form-group {
+    margin-bottom: 1rem;
+  }
+}

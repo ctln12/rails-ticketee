@@ -56,6 +56,9 @@ gem 'net-http'
 # Provides installers to get you going with the CSS bundler of your choice [https://github.com/rails/cssbundling-rails]
 gem 'cssbundling-rails'
 
+# Forms made easy [https://github.com/heartcombo/simple_form]
+gem 'simple_form'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[ mri mingw x64_mingw ]

@@ -6,26 +6,15 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
-
-  &:first-child {
-    margin-top: 20px;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    max-width: 70%;
-  }
+  flex-direction: column;
 }
 
 ul.actions {
   @extend .list-inline;
   display: flex;
-  justify-content: flex-end;
-  max-width: 30%;
 
   li {
-    margin-top: 10px;
-    margin-left: 5px;
+    margin: 0px 5px auto 0;
   }
 }
 
@@ -87,5 +76,27 @@ form {
 
   div.form-group {
     margin-bottom: 1rem;
+  }
+}
+
+// Responsive
+@include media-breakpoint-up(sm) {
+  header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  h1, h2, h3, h4, h5, h6 {
+    max-width: 70%;
+  }
+}
+
+  ul.actions {
+    justify-content: flex-end;
+
+    li {
+      margin: 0px 0 auto 5px;
+    }
   }
 }

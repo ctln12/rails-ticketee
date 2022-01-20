@@ -1,5 +1,9 @@
 @import 'bootstrap/scss/bootstrap';
 
+body {
+  padding-top: 70px;
+}
+
 header {
   display: flex;
   justify-content: space-between;

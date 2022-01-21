@@ -13,7 +13,7 @@ RSpec.feature 'Users can create new tickets', type: :feature do
   scenario 'with valid attributes' do
     fill_in 'Name', with: 'Non-standards compliance'
     fill_in 'Description', with: 'My pages are ugly!'
-    click_button 'Create Tciket'
+    click_button 'Create Ticket'
 
     expect(page).to have_content 'Ticket has been created.'
   end

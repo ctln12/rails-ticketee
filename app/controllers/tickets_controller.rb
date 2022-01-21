@@ -14,12 +14,11 @@ class TicketsController < ApplicationController
       redirect_to [@project, @ticket]
     else
       flash.now[:alert] = 'Ticket has not been created.'
-      render 'new'
+      render 'new', status: :unprocessable_entity
     end
   end
 
-  def show
-  end
+  def show; end
 
   private
 

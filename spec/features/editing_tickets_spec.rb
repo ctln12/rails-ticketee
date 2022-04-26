@@ -8,7 +8,7 @@ RSpec.feature 'Users can edit existing tickets' do
 
   before do
     visit project_ticket_path(project, ticket)
-    click_link 'Edit ticket'
+    click_link 'Edit Ticket'
   end
 
   scenario 'with valid attributes' do
